@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/header-section.css" />
+  <link rel="stylesheet" href="css/about-section.css" />
+  <link rel="stylesheet" href="css/contact-section.css" />
+  <link rel="stylesheet" href="css/product-section.css" />
+  <title>MAN EcoPave & EcoFertile</title>
+</head>
+
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="image/logo.png" alt="MAN Logo" class="logo">
+    </div>
+    <nav class="nav-menu">
+      <ul class="menu">
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#product">Product</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="mobile-nav-icon" onclick="toggleMobileMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="hamburger-menu-container">
+      <ul class="menu">
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#product">Product</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+
+
+  <section id="Home" class="hero">
+    <div class="hero-content">
+      <h1 class="title">MAN EcoPave & EcoFertile</h1>
+      <p class="subtitle">Reduce, Reuse, Recycle (3R).Usaha Karya Daur Ulang dan Budidaya Tanaman</p>
+      <button class="cta-button">Pesan Sekarang</button>
+    </div>
+    <div class="hero-image">
+      <img style="width: 487px; height: 406px" src="image/banner.svg" />
+    </div>
+  </section>
+
+  <section id="product" class="products-section">
+    <div class="products-header">
+      <h2>Produk</h2>
+      <p>Check out all of our fresh product here</p>
+    </div>
+
+    <div class="products-body">
+      <div class="product-card" id="mainProductCard">
+        <img src="path-to-default-product-image.png" alt="Kangkung" id="productImage">
+        <h3 id="productName" class="card-title">Kangkung</h3>
+        <p id="productDescription" class="card-description">Kangkung segar yang diproduksi dengan baik</p>
+        <a href="https://wa.me/yourwhatsappnumber" target="_blank">
+          <button class="order-button">Pesan</button>
+        </a>
+      </div>
+
+      <div class="product-options">
+        <button class="product-button active" onclick="updateProduct('Kangkung')">Kangkung</button>
+        <button class="product-button" onclick="updateProduct('Paving Block')">Paving Block</button>
+        <button class="product-button" onclick="updateProduct('Bawang Merah')">Bawang Merah</button>
+        <button class="product-button" onclick="updateProduct('Tomat')">Tomat</button>
+        <button class="product-button" onclick="updateProduct('Bayam')">Bayam</button>
+        <button class="product-button" onclick="updateProduct('Pupuk')">Pupuk</button>
+        <button class="product-button" onclick="updateProduct('Cabe')">Cabe</button>
+        <button class="product-button" onclick="updateProduct('Terong')">Terong</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="about-us-section">
+      <h2>About Us</h2>
+      <div class="video-container">
+        <!-- Tempatkan iframe video Anda di sini -->
+        <iframe src="video/MAN_EcoPave&EcoFertile.mp4" frameborder="0" allowfullscreen width="640"
+          height="320"></iframe>
+      </div>
+      <!-- Swiper Carousel Container -->
+      <div class="swiper-container">
+        <!-- Wrapper for slides -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img src="image/product3.png" alt="Image 1" />
+          </div>
+          <div class="swiper-slide">
+            <img src="image/product5.png" alt="Image 2" />
+          </div>
+          <div class="swiper-slide">
+            <img src="image/product6.png" alt="Image 3" />
+          </div>
+
+          <!-- Add more slides as necessary -->
+        </div>
+        <!-- Add Pagination -->
+        <!-- <div class="swiper-pagination"></div> -->
+
+        <!-- Add Navigation buttons -->
+        <!-- <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div> -->
+      </div>
+    </div>
+
+  </section>
+
+  <section id="contact">
+    <div class="contact-content">
+      <h2>Hubungi Kami</h2>
+      <div class="map-and-contact">
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.439540705964!2d124.84491241200692!3d1.5063330610435128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32879fe3b6efc6b1%3A0x604dab53bf15ccc4!2sMadrasah%20Aliyah%20Negeri%20Model%20Manado!5e0!3m2!1sid!2sid!4v1702463098643!5m2!1sid!2sid"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="contact-details">
+          <a href="https://wa.me/yourwhatsappnumber" class="whatsapp-button" target="_blank">
+            <i class="fab fa-whatsapp"></i> Chat WA Sekarang
+          </a>
+          <!-- Social icons can be inserted here -->
+        </div>
+      </div>
+      <div class="social-icons">
+        <a href="https://web.facebook.com/manmodelmanado/?locale=id_ID&_rdc=1&_rdr" target="_blank" class="social-icon">
+          <i class="fab fa-facebook-square"></i>
+          <span>MAN Model 1 Manado</span>
+        </a>
+        <a href="https://www.instagram.com/explore/locations/1031794688/man-model-1-manado/https://www.instagram.com/manmodel1manado"
+          target="_blank" class="social-icon">
+          <i class="fab fa-instagram"></i>
+          <span>@manmodel1manado</span>
+        </a>
+        <a href="https://www.youtube.com/channel/UC22qIB6ip8pqDmkUqr1ptDg" target="_blank" class="social-icon">
+          <i class="fab fa-youtube"></i>
+          <span>MAN Model 1 Manado</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer">
+    <div class="footer-content">
+      <p>&copy; 2023 MAN Model 1 Manado. All rights reserved.</p>
+    </div>
+  </footer>
+
+
+
+
+
+  <script src="js/app.js"></script>
+  <script src="js/product.js"></script>
+  <script src="js/about.js"></script>
+
+<!-- Tambahkan di dalam tag <head> pada HTML Anda -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+
+  <script src="https://kit.fontawesome.com/yourkitcode.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</body>
+
+</html>

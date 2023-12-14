@@ -167,6 +167,7 @@ header {
 	transform-style: preserve-3d;
 	width: 350px; /* Adjust based on your image's dimensions */
 	/* margin-right: 100px; */
+    margin-top: 50px;
 }
 
 .hover-animate {
@@ -223,7 +224,7 @@ header {
 	}
 	.hero-image img {
 		padding-bottom: -50px;
-		margin-top: -50px;
+		/* margin-top: -50px; */
 		object-fit: contain;
 	}
 }
